@@ -38,3 +38,12 @@ keymap.cson
   'C': 'mgit-ui:start-commit'
   'D': 'mgit-ui:toggle-diff'
 ```
+
+## TODO
+
+- [ ] `diff --cached`
+- [ ] highlight diff by textDecoration(not by grammar)
+- [ ] move next/prev hunk by keyboard on `diff` view
+- [ ] introduce control-bar for easy to complement memory
+- [ ] new branch, checkout file, checkout branch
+- [ ] `commit --ammend`, `commit --ammend -no-edit`
