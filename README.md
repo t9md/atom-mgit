@@ -13,7 +13,7 @@ minimum git wrapper for me(t9md).
 
 Assume you set example keymap displayed in next section.
 
-1. `git:status` by `space g s`
+1. `mgit:status` by `space g s`
 2. Prepare index by using one of `toggle-stage`(`-`), `stage`(`<`), `unstage`(`>`)
   - You can check `diff` by `D`.
 3. Start commit by `C`, your cursor is placed at first line of status buffer
