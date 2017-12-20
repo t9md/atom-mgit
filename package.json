@@ -9,6 +9,9 @@
   "engines": {
     "atom": "^1.15.0"
   },
+  "activationCommands": {
+    "atom-workspace": ["mgit:status"]
+  },
   "dependencies": {
     "atom-package-deps": "^4.6.1",
     "prettier": "^1.8.2",
