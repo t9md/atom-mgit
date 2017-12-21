@@ -43,6 +43,7 @@ keymap.cson
 
 - [x] auto-refresh status/diff
 - [ ] jump to real file from diff view
+- [ ] Detect git status change outside of Atom.app
 - [ ] `diff --cached`
 - [ ] highlight diff by textDecoration(not by grammar)
 - [ ] move next/prev hunk by keyboard on `diff` view
