@@ -10,7 +10,7 @@
     "atom": "^1.15.0"
   },
   "activationCommands": {
-    "atom-text-editor": ["mgit:status"]
+    "atom-text-editor": ["mgit:status", "mgit:start-commit"]
   },
   "dependencies": {
     "atom-package-deps": "^4.6.1",
