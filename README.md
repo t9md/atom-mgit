@@ -40,7 +40,6 @@ keymap.cson
   'D': 'mgit-ui:toggle-diff'
   'C': 'mgit-ui:start-commit'
   'R': "mgit-ui:reset"
-  'shift-cmd-c': 'mgit-ui:add-all-and-start-commit'
 
 'atom-text-editor.vim-mode-plus.normal-mode.mgit-diff, atom-text-editor.vim-mode-plus.visual-mode.mgit-diff':
   'tab': 'mgit-ui:move-to-next-hunk'
