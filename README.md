@@ -26,17 +26,25 @@ keymap.cson
 
 ```coffeescript
 'atom-text-editor.vim-mode-plus.normal-mode':
-  'space g s': 'mgit:status'
+  'g s': 'mgit:status'
 
-'atom-text-editor.vim-mode-plus.normal-mode.mgit, atom-text-editor.vim-mode-plus.visual-mode.mgit':
-  'q': 'core:close'
+'atom-text-editor.vim-mode-plus.insert-mode.mgit-status':
+  'cmd-s': 'mgit-ui:commit'
 
 'atom-text-editor.vim-mode-plus.normal-mode.mgit-status, atom-text-editor.vim-mode-plus.visual-mode.mgit-status':
   '-': 'mgit-ui:toggle-stage'
   '<': 'mgit-ui:stage'
   '>': 'mgit-ui:unstage'
-  'C': 'mgit-ui:start-commit'
+  '1': 'mgit-ui:stage'
+  '2': 'mgit-ui:unstage'
   'D': 'mgit-ui:toggle-diff'
+  'C': 'mgit-ui:start-commit'
+  'R': "mgit-ui:reset"
+  'shift-cmd-c': 'mgit-ui:add-all-and-start-commit'
+
+'atom-text-editor.vim-mode-plus.normal-mode.mgit-diff, atom-text-editor.vim-mode-plus.visual-mode.mgit-diff':
+  'tab': 'mgit-ui:move-to-next-hunk'
+  'shift-tab': 'mgit-ui:move-to-previous-hunk'
 ```
 
 ## TODO
