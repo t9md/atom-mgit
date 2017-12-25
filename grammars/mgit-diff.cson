@@ -1,0 +1,38 @@
+# Based on language-diff pkg which is also based on Textmate diff bundle
+'firstLineMatch': '(?x)^\n\t\t(===\\ modified\\ file\n\t\t|==== \\s* // .+ \\s - \\s .+ \\s+ ====\n\t\t|Index:\\ \n\t\t|---\\ [^%\\n]\n\t\t|\\*\\*\\*.*\\d{4}\\s*$\n\t\t|\\d+(,\\d+)* (a|d|c) \\d+(,\\d+)* $\n\t\t|diff\\ --git\\ \n\t\t|commit\\ [0-9a-f]{40}$\n\t\t)'
+'name': 'MgitDiff'
+'patterns': [
+  {
+    'captures':
+      '1': 'name': 'diff.chunk.at'
+      '2': 'name': 'diff.chunk.range'
+      '3': 'name': 'diff.chunk.at'
+    'match': '^(@@)\\s*(.+?)\\s*(@@)($\\n?)?'
+    'name': 'diff.chunk'
+  }
+  {
+    'match': '^diff --git a/.*$\\n?'
+    'name': 'diff.header.git-diff'
+  }
+  {
+    'match': '^index [0-9a-f]{7,40}\\.\\.[0-9a-f]{7,40}.*$\\n?'
+    'name': 'diff.header.git-index'
+  }
+  {
+    'match': '^-{3} .+$'
+    'name': 'diff.header.from-file'
+  }
+  {
+    'match': '^\\+{3} .+$'
+    'name': 'diff.header.to-file'
+  }
+  {
+    'match': '^\\+.*$'
+    'name': 'diff.inserted'
+  }
+  {
+    'match': '^-.*$'
+    'name': 'diff.deleted'
+  }
+]
+'scopeName': 'source.mgit-diff'

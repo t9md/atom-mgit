@@ -1,0 +1,3 @@
+'atom-text-editor.vim-mode-plus.normal-mode[data-grammar="source mgit-diff"]':
+  'tab': "vim-mode-plus:move-to-next-diff-hunk"
+  'shift-tab': "vim-mode-plus:move-to-previous-diff-hunk"

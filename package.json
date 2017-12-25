@@ -13,10 +13,8 @@
     "atom-text-editor": ["mgit:status", "mgit:start-commit"]
   },
   "dependencies": {
-    "atom-package-deps": "^4.6.1",
     "fs-plus": "^3.0.1",
     "prettier": "^1.8.2",
     "underscore-plus": "^1.6.6"
-  },
-  "package-deps": ["language-diff"]
+  }
 }

@@ -1,0 +1,46 @@
+@import "ui-variables";
+@import "syntax-variables";
+@import "octicon-mixins";
+
+atom-text-editor {
+  .mgit-syntax--added {
+    color: @syntax-color-added;
+  }
+  .mgit-syntax--removed {
+    color: @syntax-color-removed;
+  }
+}
+
+atom-text-editor {
+  .syntax--diff {
+    // &.syntax--header.syntax--git-diff {
+    //   color: @syntax-color-constant;
+    // }
+    // &.syntax--header.syntax--git-index {
+    //   color: @syntax-color-method;
+    // }
+    &.syntax--header {
+      color: @syntax-color-constant;
+    }
+    &.syntax--chunk.syntax--at {
+      color: @syntax-color-keyword;
+    }
+    &.syntax--chunk.syntax--range {
+      color: @syntax-color-keyword;
+    }
+    &.syntax--header.syntax--from-file,
+    &.syntax--deleted {
+      color: lighten(@syntax-color-removed, 10%);
+
+      // color: @syntax-text-color;
+      // background-color: fadeout(@syntax-color-removed, 70%);
+    }
+    &.syntax--header.syntax--to-file,
+    &.syntax--inserted {
+      color: lighten(@syntax-color-added, 10%);
+
+      // color: @syntax-text-color;
+      // background-color: fadeout(@syntax-color-added, 70%);
+    }
+  }
+}
